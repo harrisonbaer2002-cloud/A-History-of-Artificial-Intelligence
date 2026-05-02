@@ -306,6 +306,32 @@
     .era-number { font-size: 3.5rem; }
   }
 
+  /* ── IMAGES ── */
+  .era-img {
+    margin: 2rem 0;
+    display: block;
+  }
+
+  .era-img img {
+    width: 100%;
+    max-width: 520px;
+    height: 280px;
+    object-fit: cover;
+    object-position: center top;
+    display: block;
+    filter: grayscale(20%);
+    border: 1px solid var(--rule);
+  }
+
+  .era-img figcaption {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 12px;
+    color: var(--ink-light);
+    letter-spacing: 0.04em;
+    margin-top: 0.5rem;
+    font-style: italic;
+  }
+
   /* ── SCROLL ANIMATION ── */
   .era {
     opacity: 0;
@@ -421,6 +447,10 @@
     </div>
     <div class="era-body">
       <p>The history of artificial intelligence began with a question: could a machine be capable of simulating any algorithm? In 1936, British mathematician Alan Turing sought to answer this notion, setting in stone the foundation of modern computing. Turing's ideas came to fruition during World War II, where his device was used to break Nazi Germany's Enigma codes at Bletchley Park, England. His team's success demonstrated that machines could tackle many complex problems faster than a human. The result posed another question to Turing: if machines could outthink human's in one area, could they be made to reason and learn like the human mind?</p>
+      <figure class="era-img">
+        <img src="turing.jpg" alt="Alan Turing" />
+        <figcaption>Alan Turing, whose 1950 paper introduced the earliest benchmark for artificial intelligence.</figcaption>
+      </figure>
       <div class="era-pull">"Could a machine be capable of simulating any algorithm?"</div>
       <p>Turing published his answer in 1950, in a paper titled "Computing Machinery and Intelligence." It introduced what he called the "Imitation Game". This was a test to determine whether a machine could exhibit intelligent behavior indistinguishable from a human. The notion later was known as the Turing Test, and it became the earliest benchmark for artificial intelligence. Researchers today still debate over the question over if machines will ever reach this level of intelligence.</p>
     </div>
@@ -438,6 +468,10 @@
     <div class="era-body">
       <p>In the summer of 1956, a group of scientists gathered at Dartmouth College in New Hampshire that eventually established Artificial Intelligence as a field of study. The two month long workshop took place in Hanover, New Hampshire. The conference officially coined the term "artificial intelligence" for the first time. The goal of the conference was to explore the notion of whether a machine could practice learning and intelligence like humans do. Notable researchers like John McCarthy, Claude Shannon, and Marvin Minsky believed that in principle, human intelligence could be simulated by a machine.</p>
       <div class="era-pull">The conference gave the field a name and an identity. The idea of artificial intelligence was born.</div>
+      <figure class="era-img">
+        <img src="dartmouth.jpg" alt="Dartmouth College" />
+        <figcaption>Dartmouth College, Hanover, New Hampshire — site of the 1956 conference that gave artificial intelligence its name.</figcaption>
+      </figure>
       <p>However through their conference it was determined this technology take years if not decades to develop. Although no major breakthroughs took place, the impact the conference had was lasting. It brought together a team of renowned scientists and gave the field a name and an identity. The idea of artificial intelligence was born, and scientists were steadfast in their pursuit of this technology.</p>
     </div>
   </section>
@@ -454,6 +488,10 @@
     <div class="era-body">
       <p>Following the Dartmouth conference, ambition in AI research exploded in the 1960's. Researchers predicted machines would harness human level intelligence in the coming decades. However this notion would die down in the coming years. In 1973 a report done by the British government called the Lighthill Report concluded research failed to live up to the previous prediction. This report triggered a sizable pull in funding to the AI field, the event later known as the First AI Winter. A brief comeback occurred in the 1980's through the lens of expert systems. However their cost was too great and the market for them collapsed. This was later known as the Second AI Winter.</p>
       <div class="era-pull">The collapse of the expert system market marked the end of a second period of optimism in artificial intelligence.</div>
+      <figure class="era-img">
+        <img src="winters.jpg" alt="1980s computer" />
+        <figcaption>Hardware of the expert systems era — rendered obsolete when the market collapsed, marking the Second AI Winter.</figcaption>
+      </figure>
       <p>Expert systems were programs designed to mimic the decisions of human specialist (fields such as medicine and finance). They relied on rule based logic which required teams of engineers to manually encode knowledge into the system. The scale of work turned out to be too large, and the rules became too complex and costly to maintain. The collapse of the expert system market marked the end of a second period of optimism in artificial intelligence.</p>
     </div>
   </section>
@@ -470,6 +508,10 @@
     <div class="era-body">
       <p>The concept of a neural network stretched back to the 1940's. However, limited computing power made it impractical for decades. Progress resumed in the 1980's through the work of Yann LeCun, when he developed Convolutional Neural Networks that could processed images by detecting features layer by layer. However datasets of the era were too small for the architecture's potential to be seen. That changed in 2012, when researchers Alex Krizhevsky and Geoffrey Hinton entered a convolutional network called AlexNet into the ImageNet challenge. It was a global competition to classify images across one thousand categories. AlexNet achieved a top-5 error rate of 15.3 percent, well ahead of the runner-up's 26.2 percent. The event was later known as the breakthrough that launched the modern deep learning era.</p>
       <div class="era-pull">AlexNet achieved a top-5 error rate of 15.3 percent, well ahead of the runner-up's 26.2 percent.</div>
+      <figure class="era-img">
+        <img src="hinton.jpg" alt="Geoffrey Hinton" />
+        <figcaption>Geoffrey Hinton, whose work on deep neural networks — including AlexNet in 2012 — launched the modern deep learning era.</figcaption>
+      </figure>
       <p>For sequential data like language and audio, researchers had developed Recurrent Neural Networks. These carried a hidden state forward through each step of a sequence to model what came before. However a flaw called the vanishing gradient made long sequences difficult to learn. Sepp Hochreiter and Jürgen Schmidhuber addressed this in 1997 with Long Short-Term Memory networks. They used gated mechanisms to selectively retain or discard information. And a further development came in 2014, when Ian Goodfellow introduced Generative Adversarial Networks. They developed a framework in which two networks competed against each other to produce increasingly realistic synthetic content. This raised concerns about fabricated media that still persist today.</p>
     </div>
   </section>
@@ -486,6 +528,10 @@
     <div class="era-body">
       <p>Following the deep learning era, researchers turned their attention to language. Early language models relied on statistical methods that predicting the next word based on the few that came before it. However these models had no real understanding of context. But progress resumed through Recurrent Neural Networks. The networks carried information forward through a sequence to inform the next step. However a flaw called the vanishing gradient made long sequences difficult to train on. That changed in 2017, when researchers at Google published a paper titled "Attention Is All You Need." It introduced the transformer architecture that could process all words in a sequence simultaneously. This allowed models to capture context far more effectively than anything before.</p>
       <div class="era-pull">It has become known as the moment artificial intelligence entered mainstream culture.</div>
+      <figure class="era-img">
+        <img src="chatgpt.jpg" alt="ChatGPT interface" />
+        <figcaption>ChatGPT, released by OpenAI in 2022 — the moment artificial intelligence entered mainstream culture.</figcaption>
+      </figure>
       <p>The following year, OpenAI released GPT-1 and Google released BERT. They were the first large language models built on the transformer architecture. In this release, neither made a significant public impact. That changed in 2020, when OpenAI released GPT-3 that was trained on 175 billion parameters. The model demonstrated that scale alone could produce coherent writing and multi-step reasoning. The event was later known as the turning point for large language models as a serious technology. Further development came in 2022 when OpenAI released ChatGPT to the public. It was the first time millions of users interacted directly with a language model. It has become known as the moment artificial intelligence entered mainstream culture. Despite their capabilities these models carry significant limitations. They tend to generate factually incorrect information with confidence, a problem known as hallucination. Their knowledge remains fixed at a training cutoff which leaving recent events outside their awareness.</p>
     </div>
   </section>
